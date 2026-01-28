@@ -14,7 +14,7 @@ void heapify(int a[], int n, int i){
 
     if (largest != i){
 
-           int temp = a[i];
+        int temp = a[i];
         a[i] = a[largest];
         a[largest] = temp;
 
@@ -40,16 +40,40 @@ void heapsort(int a[], int n){
     }
 }
 
-int main(){
+// int main(){
 
-    int a[] = {5, 3, 8, 4, 1};
-    int n = 5;
+//     int a[] = {5, 3, 8, 4, 1};
+//     int n = 5;
+
+//     heapsort(a, n);
+
+//     for (int i = 0; i < n; i++)
+//         printf("%d ", a[i]);
+
+
+//     return 0;
+// }
+
+// user input 
+
+int main()
+{
+    int n;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    int a[n];
+
+    printf("Enter elements:\n");
+    for (int i = 0; i < n; i++)
+        scanf("%d", &a[i]);
 
     heapsort(a, n);
 
+    printf("Sorted array:\n");
     for (int i = 0; i < n; i++)
         printf("%d ", a[i]);
-
 
     return 0;
 }
