@@ -10,12 +10,13 @@ void heapify(int a[], int n, int i){
         largest = l;
 
     if (r < n && a[r] > a[largest])
-       largest = r;
+    largest = r;
 
     if (largest != i){
 
         int temp = a[i];
         a[i] = a[largest];
+    
         a[largest] = temp;
 
         heapify(a, n, largest);
