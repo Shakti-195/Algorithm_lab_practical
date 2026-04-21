@@ -1,0 +1,8 @@
+{
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+
+    "code-runner.executorMap": {
+        "c": "cd $dir && C:\\MinGW\\bin\\gcc.exe -g \"$fileName\" -o \"$fileNameWithoutExt.exe\" && \"$fileNameWithoutExt.exe\""
+    }
+}
